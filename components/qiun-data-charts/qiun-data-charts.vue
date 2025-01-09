@@ -270,9 +270,15 @@ function debounce(fn, wait) {
   }
 }
 
+import qiunError from '../qiun-error/qiun-error.vue';
+import qiunLoading from '../qiun-loading/qiun-loading.vue';
 export default {
   name: 'qiun-data-charts',
   mixins: [uniCloud.mixinDatacom],
+  components: {
+    qiunError,
+    qiunLoading
+  },
   props: {
     type: {
       type: String,
