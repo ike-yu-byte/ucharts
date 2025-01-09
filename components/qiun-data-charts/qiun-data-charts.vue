@@ -1451,8 +1451,6 @@ export default {
 import uChartsRD from '../../js_sdk/u-charts/u-charts.js';
 import cfu from '../../js_sdk/u-charts/config-ucharts.js';
 import cfe from '../../js_sdk/u-charts/config-echarts.js';
-import qiunError from '../qiun-error/qiun-error.vue';
-import qiunLoading from '../qiun-loading/qiun-loading.vue';
 
 var that = {};
 var rootdom = null;
@@ -1480,10 +1478,6 @@ function rdformatterAssign(args,formatter) {
 }
 
 export default {
-  components: {
-    qiunError,
-    qiunLoading
-  },
   data() {
     return {
       rid:null
