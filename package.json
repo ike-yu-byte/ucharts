@@ -1,6 +1,6 @@
 {
     "name": "ike-ucharts",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "qiun-data-charts的node_modules版本",
     "private": false,
     "keywords": ["ucharts", "echarts", "uniapp", "npm"],
