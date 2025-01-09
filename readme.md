@@ -5,12 +5,12 @@
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![npm package](https://img.shields.io/npm/v/@qiun/ucharts.svg?style=flat-square)](https://www.npmjs.com/~qiun) -->
 
-## @ike/ucharts简介
+## ike-ucharts简介
 
 `uCharts`是一款基于`canvas API`开发的适用于所有前端应用的图表库，开发者编写一套代码，可运行到 Web、iOS、Android（基于 uni-app
 /
 taro ）、以及各种小程序（微信/支付宝/百度/头条/飞书/QQ/快手/钉钉/淘宝）、快应用等更多支持 canvas
-API 的平台。@ike/ucharts是ucharts的非uni_modules版本，支持npm方式安装，兼容vue2和vue3版本的uniapp开发。
+API 的平台。ike-ucharts是ucharts的非uni_modules版本，支持npm方式安装，兼容vue2和vue3版本的uniapp开发。
 
 ## ucharts官方网站
 
@@ -29,7 +29,7 @@ API 的平台。@ike/ucharts是ucharts的非uni_modules版本，支持npm方式�
 安装
 
 ```
-npm install @ike/uchart
+npm install ike-ucharts
 ```
 
 js部分
@@ -37,7 +37,7 @@ js部分
 ```
 import { ref, watch } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
-import ucharts from '@ike/ucharts'
+import ucharts from 'ike-ucharts'
 const props = defineProps({
   data: {
     type: Object,

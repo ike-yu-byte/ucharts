@@ -1,11 +1,10 @@
 {
-    "id": "ike-ucharts",
-    "name": "@ike/ucharts",
-    "version": "0.0.1",
+    "name": "ike-ucharts",
+    "version": "1.0.0",
     "description": "qiun-data-charts的node_modules版本",
     "private": false,
-    "keywords": [],
-    "author": "",
+    "keywords": ["ucharts", "echarts", "uniapp", "npm"],
+    "author": "ike_yu",
     "license": "MIT",
     "main": "index.js",
     "scripts": {},
@@ -17,6 +16,13 @@
         "node": ">=18.0.0",
         "pnpm": ">=8.0.0"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ike-yu-byte/ucharts.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ike-yu-byte/ucharts/issues"
+    },
     "files": [
         "package.json",
         "components",
@@ -24,9 +30,10 @@
         "static",
         "index.js",
         "package.json",
-
+        ".npmrc"
     ],
     "publishConfig": {
+        "access": "public",
         "registry": "https://registry.npmjs.org"
     },
     "uni_modules": {
