@@ -35,9 +35,9 @@ npm install ike-ucharts
 js部分
 
 ```
-import { ref, watch } from 'vue'
-import { onShow } from '@dcloudio/uni-app'
-import ucharts from 'ike-ucharts'
+import { ref, watch } from 'vue';
+import { onShow } from '@dcloudio/uni-app';
+import ucharts from 'ike-ucharts';
 const props = defineProps({
   data: {
     type: Object,
