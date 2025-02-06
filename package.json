@@ -1,10 +1,10 @@
 {
-    "name": "ike-ucharts",
+    "name": "ch-ucharts",
     "version": "1.0.3",
     "description": "qiun-data-charts的node_modules版本",
     "private": false,
     "keywords": ["ucharts", "echarts", "uniapp", "npm"],
-    "author": "ike_yu",
+    "author": "",
     "license": "MIT",
     "main": "index.js",
     "scripts": {},
