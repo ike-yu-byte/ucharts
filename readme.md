@@ -5,12 +5,12 @@
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![npm package](https://img.shields.io/npm/v/@qiun/ucharts.svg?style=flat-square)](https://www.npmjs.com/~qiun) -->
 
-## ike-ucharts 简介
+## ch-ucharts 简介
 
 `uCharts`是一款基于`canvas API`开发的适用于所有前端应用的图表库，开发者编写一套代码，可运行到 Web、iOS、Android（基于 uni-app
 /
 taro ）、以及各种小程序（微信/支付宝/百度/头条/飞书/QQ/快手/钉钉/淘宝）、快应用等更多支持 canvas
-API 的平台。ike-ucharts 是 ucharts 的非 uni_modules 版本，支持 npm 方式安装，兼容 vue2 和 vue3 版本的 uniapp 开发。
+API 的平台。ch-ucharts 是 ucharts 的非 uni_modules 版本，支持 npm 方式安装，兼容 vue2 和 vue3 版本的 uniapp 开发。
 
 ## ucharts 官方网站
 
@@ -29,7 +29,7 @@ API 的平台。ike-ucharts 是 ucharts 的非 uni_modules 版本，支持 npm �
 安装
 
 ```
-npm install ike-ucharts
+npm install ch-ucharts
 ```
 
 js 部分
@@ -37,7 +37,7 @@ js 部分
 ```
 import { ref, watch } from 'vue';
 import { onShow } from '@dcloudio/uni-app';
-import ucharts from 'ike-ucharts';
+import ucharts from 'ch-ucharts';
 const props = defineProps({
   data: {
     type: Object,
@@ -176,24 +176,16 @@ css 部分
 }
 ```
 
-## easycom 导入组件
-为了兼容H5以外的平台，必须采用easycom的方式导入vue组件
+## easycom 方式引入组件
+
+为了兼容小程序，需要使用 easycom 方式引入 ucharts 相关组件
+
 ```
 "easycom": {
   // 自动导入组件
   "autoscan": true,
   "custom": {
-    // uni-ui 规则如下配置
-    "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
-    // uview-plus规则如下配置
-    "^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
-    "^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
-    "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue",
-    // wot-degign-uni配置如下所示
-    "^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue",
-    // "^ike-(.*)": "common-components/components/ike-$1/ike-$1.vue",
-    // ucharts相关
-    "^qiun-(.*)": "ike-ucharts/components/qiun-$1/qiun-$1.vue"
+    "^qiun-(.*)": "ch-ucharts/components/qiun-$1/qiun-$1.vue"
   }
 }
 ```
