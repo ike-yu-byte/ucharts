@@ -5,20 +5,20 @@
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![npm package](https://img.shields.io/npm/v/@qiun/ucharts.svg?style=flat-square)](https://www.npmjs.com/~qiun) -->
 
-## ike-ucharts简介
+## ch-ucharts 简介
 
 `uCharts`是一款基于`canvas API`开发的适用于所有前端应用的图表库，开发者编写一套代码，可运行到 Web、iOS、Android（基于 uni-app
 /
 taro ）、以及各种小程序（微信/支付宝/百度/头条/飞书/QQ/快手/钉钉/淘宝）、快应用等更多支持 canvas
-API 的平台。ike-ucharts是ucharts的非uni_modules版本，支持npm方式安装，兼容vue2和vue3版本的uniapp开发。
+API 的平台。ch-ucharts 是 ucharts 的非 uni_modules 版本，支持 npm 方式安装，兼容 vue2 和 vue3 版本的 uniapp 开发。
 
-## ucharts官方网站
+## ucharts 官方网站
 
 ## [https://www.ucharts.cn](https://www.ucharts.cn)
 
 ## 快速体验
 
-一套代码编到多个平台，依次扫描二维码，亲自体验uCharts图表跨平台效果！其他平台请自行编译。
+一套代码编到多个平台，依次扫描二维码，亲自体验 uCharts 图表跨平台效果！其他平台请自行编译。
 
 ![](https://www.ucharts.cn/images/web/guide/qrcode20220224.png)
 
@@ -29,15 +29,15 @@ API 的平台。ike-ucharts是ucharts的非uni_modules版本，支持npm方式�
 安装
 
 ```
-npm install ike-ucharts
+npm install ch-ucharts
 ```
 
-js部分
+js 部分
 
 ```
 import { ref, watch } from 'vue';
 import { onShow } from '@dcloudio/uni-app';
-import ucharts from 'ike-ucharts';
+import ucharts from 'ch-ucharts';
 const props = defineProps({
   data: {
     type: Object,
@@ -159,14 +159,16 @@ const opts = {
 }
 ```
 
-html部分
+html 部分
 
 ```
 <div class="chart-box">
     <ucharts type="area" :chartData="chartData" :opts="opts" />
 </div>
 ```
-css部分
+
+css 部分
+
 ```
 .chart-box {
   width: 100%;
@@ -174,22 +176,35 @@ css部分
 }
 ```
 
+## easycom 方式引入组件
+
+为了兼容小程序，需要使用 easycom 方式引入 ucharts 相关组件
+
+```
+"easycom": {
+  // 自动导入组件
+  "autoscan": true,
+  "custom": {
+    "^qiun-(.*)": "ch-ucharts/components/qiun-$1/qiun-$1.vue"
+  }
+}
+```
+
 ## 视频教程
 
-## [uCharts新手入门教程](https://www.bilibili.com/video/BV1qA411Q7se/?share_source=copy_web&vd_source=42a1242f9aaade6427736af69eb2e1d9)
+## [uCharts 新手入门教程](https://www.bilibili.com/video/BV1qA411Q7se/?share_source=copy_web&vd_source=42a1242f9aaade6427736af69eb2e1d9)
 
 #### 教程链接
 
 [官网组件使用教程](https://www.ucharts.cn/v2/#/tool/index)
 
-
 ## 版权信息
 
-uCharts始终坚持开源，遵循
+uCharts 始终坚持开源，遵循
 [Apache Licence 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
-开源协议，意味着您无需支付任何费用，即可将uCharts应用到您的产品中。
+开源协议，意味着您无需支付任何费用，即可将 uCharts 应用到您的产品中。
 
-注意：这并不意味着您可以将uCharts应用到非法的领域，比如涉及赌博，暴力等方面。如因此产生纠纷或法律问题，uCharts相关方及秋云科技不承担任何责任。
+注意：这并不意味着您可以将 uCharts 应用到非法的领域，比如涉及赌博，暴力等方面。如因此产生纠纷或法律问题，uCharts 相关方及秋云科技不承担任何责任。
 
 ## 合作伙伴
 
@@ -204,11 +219,11 @@ uCharts始终坚持开源，遵循
 
 ## 相关链接
 
-- [uCharts官网](https://www.ucharts.cn)
-- [DCloud插件市场地址](https://ext.dcloud.net.cn/plugin?id=271)
-- [uCharts码云开源托管地址](https://gitee.com/uCharts/uCharts)
+- [uCharts 官网](https://www.ucharts.cn)
+- [DCloud 插件市场地址](https://ext.dcloud.net.cn/plugin?id=271)
+- [uCharts 码云开源托管地址](https://gitee.com/uCharts/uCharts)
   [![star](https://gitee.com/uCharts/uCharts/badge/star.svg?theme=gvp)](https://gitee.com/uCharts/uCharts/stargazers)
-- [uCharts npm开源地址](https://www.ucharts.cn)
-- [ECharts官网](https://echarts.apache.org/zh/index.html)
-- [ECharts配置手册](https://echarts.apache.org/zh/option.html)
-- [图表组件在项目中的应用 ReportPlus数据报表](https://www.ucharts.cn/v2/#/layout/info?id=1)
+- [uCharts npm 开源地址](https://www.ucharts.cn)
+- [ECharts 官网](https://echarts.apache.org/zh/index.html)
+- [ECharts 配置手册](https://echarts.apache.org/zh/option.html)
+- [图表组件在项目中的应用 ReportPlus 数据报表](https://www.ucharts.cn/v2/#/layout/info?id=1)
